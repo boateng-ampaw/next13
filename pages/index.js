@@ -7,6 +7,9 @@ import GetProducts from '@/hooks/getProducts'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const {data} = GetProducts()
+
+  console.log(data);
   return (
     <>
       <Head>
